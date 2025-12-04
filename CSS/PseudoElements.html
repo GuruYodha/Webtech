@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    p::first-letter {
+        font-size: 50px;
+        color: red;
+    }
+
+    p::after {
+        content: " 😎";
+    }
+    p::before{
+        content: "world";
+    }
+    p::selection {
+    color: white;
+    background-color: purple;
+    }
+
+    ul li::marker {
+    list-style-type: square;
+    color: red;
+    font-size: 30px;
+}
+
+</style>
+</head>
+<body>
+    <p>Hello Guru!</p>
+
+    <p>Select this text and see the effect.</p>
+
+<ul>
+  <li>Milk</li>
+  <li>Eggs</li>
+  <li>Bread</li>
+</ul>
+</body>
+</html>

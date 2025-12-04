@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*DESCENDENT*/
+        body .box {
+            color: red;
+        }
+
+        /*DIRECT*/
+        .box1>h1 {
+
+            color: blue;
+        }
+
+        /*ADJACENT*/
+        .box2+h1 {
+            color: pink;
+        }
+        
+        /*GENERAL SIBLING*/
+        h2~p{
+            color:gold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h1>H1
+            <h2>H2</h2>
+        </h1>
+    </div>
+
+    <div class="box1">
+        <h1>H1
+            <h2>H2
+                <h3>h3</h3>
+            </h2>
+        </h1>
+    </div>
+
+    <div class="box2">
+        <h1>HI4</h1>
+    </div>
+    <h1>ADJACENT SIBLING
+    </h1>
+
+    <div>
+        <h2>Heading</h2>
+        <p>First paragraph.</p>
+        <span>Some text.</span>
+        <p>Second paragraph.</p>
+    </div>
+</body>
+
+</html>
